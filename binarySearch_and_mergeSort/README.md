@@ -43,4 +43,4 @@ three input sets `inp_low`, `inp_mid`, `inp_hi` with increasing problem sizes.
 Generally, `inp_low` contains smallest inputs, and `inp_hi` contains millions
 of entities and it usually takes few seconds to solve the problem of a such size.
  `common/compare_performace.sh` which will perform N (N =
-10) runs of every input on evety program and everage the result.
+10) runs of every input on evety program and average the result.
