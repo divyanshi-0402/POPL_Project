@@ -3,12 +3,12 @@ Compare the performance and implementation complexity of multithreaded applicati
 
 ## Table of contents:
 * Problem Statement
+* POPL Aspects
 * Summary 
 * Motivation
 * POPL Aspects
 * Benchmarks
 * Results
-* Software Architecture
 * Requirements
 * Problem descriptions
 
