@@ -7,6 +7,8 @@ Compare the performance and implementation complexity of multithreaded applicati
 * Motivation
 * Benchmarks
 * Results
+* Requirements
+* Problem descriptions
 
 ## Problem Statement
 The concurrency model and programming language selection greatly influence the implementation complexity and performance of applications. Our project aims to systematically evaluate and compare the performance characteristics and implementation complexities of applications written in Rust and C++, taking into account both serial and multithreaded execution modes. The comparison's primary focus will be execution speed, providing valuable insights into the strengths and weaknesses of each language and execution paradigm. 
