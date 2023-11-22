@@ -2,10 +2,15 @@
 Compare the performance and implementation complexity of multithreaded applications in Rust and C++.
 
 ## Table of contents:
+* Problem Statement
 * Summary 
 * Motivation
 * Benchmarks
 * Results
+
+## Problem Statement
+The concurrency model and programming language selection greatly influence the implementation complexity and performance of applications. Our project aims to systematically evaluate and compare the performance characteristics and implementation complexities of applications written in Rust and C++, taking into account both serial and multithreaded execution modes. The comparison's primary focus will be execution speed, providing valuable insights into the strengths and weaknesses of each language and execution paradigm. 
+Our project aims to provide some evidence-based guidance and insights into the strengths and limitations of Rust and C++ in various application scenarios to developers, researchers, and decision-makers in selecting the most suitable language and execution model for their application requirements.
 
 ## Summary
 At this point, we have executed and performed preliminary analysis on the multithreading performance on three benchmarks: matrix multiplication, and searching algorithms (binary search),and sorting algorithms (merge sort) utilizing multithreading libraries and Rayon, which is implemented specifically for Rust to that of OpenMP implementation for C++.​
