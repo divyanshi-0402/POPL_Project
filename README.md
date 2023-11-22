@@ -104,3 +104,27 @@ Run `common/compare_performace.sh` which will perform N (N =
 ```
 ../common/compare_performance.sh
 ```
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# Matrix Multiplication
+
+## Problem description
+
+Binary operation that produces a matrix from two matrices. 
+It is a compute-bound problem,so we can observe how the parallelism libraries behave on it. Additionally, we may see the behavior of these algorithms when built in a cache-friendly or multi-thread-advantageous manner. Another comparison that can be made is between the two approaches of handling a task division given the real job division (row first dot products).
+
+
+### Performance testing set up (For Matrix Multiplication)
+C++ and Rust directories have ```main.rs``` and ```main.cpp``` for respective algorithms.
+
+The next command line is used to compile Rust program:
+If you are compiling for the first time (else skip to the next command) :
+
+```
+	cargo build
+```
+
+```
+	cargo run
+```
