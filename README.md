@@ -67,7 +67,7 @@ Sample Output:
 ```
 
 
-### Performance testing set up
+### Performance testing set up (For Binary Search and Merge Sort)
 
 Each problem has following files: `main_rust`, `main_cpp`, `gen`. First two are
 about compiling the programs. Every program recieves its input on `stdin` 
