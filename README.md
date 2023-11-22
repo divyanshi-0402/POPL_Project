@@ -29,6 +29,7 @@ The bench marks are as follows:
 4. Serial C++ (without OpenMP) vs Parallel C++ (with OpenMP)
 
 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 # Binary search
 
@@ -74,5 +75,32 @@ and write results in `stdout`. `gen` will prepare test data:
 three input sets `inp_low`, `inp_mid`, `inp_hi` with increasing problem sizes.
 Generally, `inp_low` contains smallest inputs, and `inp_hi` contains millions
 of entities and it usually takes few seconds to solve the problem of a such size.
- `common/compare_performace.sh` which will perform N (N =
+
+cd to the generator directory. Following command lines are used to generate test data
+for `inp_low`, `inp_mid`, `inp_hi` respectively.
+
+```
+echo 10000    | cargo run > ../inp_low;
+echo 1000000  | cargo run > ../inp_mid;
+echo 10000000 | cargo run > ../inp_hi;
+```
+```cd ..``` back to the main directory (binary_search / mergesort).
+
+The next command line is used to compile C++ program:
+
+```
+	g++ -std=c++11 -O2 -DNDEBUG -o main_cpp main.cpp
+```
+
+The next command line is used to compile Rust program:
+
+```
+	rustc -O --crate-name main_rust main.rs
+```
+
+Run `common/compare_performace.sh` which will perform N (N =
 10) runs of every input on evety program and average the result.
+
+```
+../common/compare_performance.sh
+```
